@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.tetris.GameActivity">
+
+    <LinearLayout
+        android:id="@+id/game_field"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:orientation="horizontal">
+
+        <com.example.tetris.GameView
+            android:id="@+id/game_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        </com.example.tetris.GameView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_field"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:height="100dp"
+            android:layout_weight="1"
+            android:text="left"></Button>
+
+        <Button
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:height="100dp"
+            android:layout_weight="1"
+            android:text="right"></Button>
+
+        <Button
+            android:id="@+id/up"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:height="100dp"
+            android:layout_weight="1"
+            android:text="up"></Button>
+
+        <Button
+            android:id="@+id/down"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:height="100dp"
+            android:layout_weight="1"
+            android:text="down"></Button>
+    </LinearLayout>
+</LinearLayout>
